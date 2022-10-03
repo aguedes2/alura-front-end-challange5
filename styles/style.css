@@ -78,7 +78,54 @@
   line-height: 19px;
 }
 
-.cabecalho-hero img{
-  width: 100vw;
+.cabecalho-hero{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;  
+  width: 100%;
+  background-image: url("../imgs/hero.png");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  border: 1px solid;
 }
+
+.hero-content{
+  width: 50%;
+  height: 352px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: 'Raleway', sans-serif;
+  padding: 32px;
+  color: #FFFFFF;
+  gap: 16px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.hero-content h1{
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.hero-content p{
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.hero-content button{
+  padding: 16px;
+  background: #2A7AE4;
+  border: none;
+  color: #FFFFFF;
+  width: 130px;
+  height: 51px;
+}
+
+.hero-content button:hover{
+  background: #5595E9;
+  border: none;
+}
+
+
 
