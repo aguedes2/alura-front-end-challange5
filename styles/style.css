@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
+body {
+  width: 1440px;
+  margin: 0 auto;
+}
 /* Header */
 #cabecalho{
   display: flex;
@@ -71,7 +75,9 @@
 
 /* Cabeçalho Hero*/
 .hero {
-  position: relative;
+  position: absolute;
+  left: 0;
+  top: 115px;
 }
 
 .hero img {
@@ -182,4 +188,98 @@
 }
 
 /* Footer */
-.rodape{}
+#rodape{
+  position: absolute;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  left: 0;
+  width: 100%;
+  gap: 32px;
+  font-family: 'Raleway', sans-serif;
+  background: #EAF2FD;
+}
+.footer-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 112px;
+  margin: 64px 152px;
+}
+
+.footer-fale-conosco {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-fale-conosco p {
+  font-weight: 700;
+}
+
+.footer-fale-conosco form{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+.footer-fale-conosco input, .footer-fale-conosco textarea{
+  padding: 8px;
+  border: 1px solid #46464640;
+  outline: none;
+  
+}
+
+.footer-fale-conosco input {
+  padding-top: 16px;
+  height: 40px;
+}
+
+.footer-fale-conosco textarea {
+  resize: none;
+}
+
+.input-container,.textarea-container {
+  position: relative;
+  width:100%;
+}
+
+.input-container input, textarea{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 500px;
+  padding: 8px 8px;
+  gap: 16px;
+  border-radius: 5px;
+}
+
+.input-container label {
+  position: absolute;
+  color: #46464640;  
+  left: 8px;
+}
+
+.input-container label {
+  font-size: 12px;
+  top: 8px;
+}
+
+#enviar {
+  width: 165px;
+  height:51px;
+  background: #2A7AE4;
+  border: none;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
